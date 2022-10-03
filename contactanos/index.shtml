@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contáctanos</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <h1>Merchant</h1>
+            <!-- NAV -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="../">Inicio</a></li>
+                    <li><a href="../ofertas/">Últimas ofertas</a></li>
+                    <li><a href="../categorias/">Categorías</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </nav>
+
+            <ul>
+                <li><a href="../login/">Iniciar sesión</a></li>
+                <li><a href="../register/">Registrarse</a></li>
+            </ul>
+
+        </header>
+
+        <!-- MAIN -->
+        <main>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Datos</legend>
+                    
+                    <div>
+                        <label for="nombre_usuario">
+                            <input type="text" id="nombre_usuario" placeholder="Nombre de usuario" autocomplete="nickname">
+                        </label>
+                    </div>
+
+                    <div>    
+                        <label for="correo_electronico">
+                            <input type="email" id="correo_electronico" placeholder="Correo electrónico" autocomplete="email">
+                        </label>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+
+                    <legend>Información</legend>
+
+                    <div>
+                        <label for="satisfaccion">
+                            ¿Cómo de satisfecho estás con nuestra página web?
+                            <input type="range" id="satisfaccion" min="1" max="5" value="5" step="1">
+                        </label>
+                    </div>
+                    
+                    <div>    
+                        <label for="opinion">
+                            ¿Cuál es el motivo de escribirnos?
+                            <input type="radio" name="opinion" id="opinion" value="opinion">Opinión
+                            <input type="radio" name="opinion" id="error" value="error">Error
+                            <input type="radio" name="opinion" id="atencion_cliente" value="atencion_cliente">Atención al cliente
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label for="cuerpo">
+                            <textarea id="cuerpo" cols="30" rows="10" placeholder="Escribe aquí tu mensaje:"></textarea>
+                        </label>
+                    </div>
+                    
+                    <input type="submit" value="Enviar">
+                    
+                </fieldset>
+
+            </form>
+
+        </main>
+
+        <!-- FOOTER -->
+        <!--#include virtual="../includes/footer.html"-->
+
+    </body>
+</html>
