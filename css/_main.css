@@ -1,0 +1,15 @@
+main {
+    display:  flex;
+    flex-direction: column;
+
+    padding: 4em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
