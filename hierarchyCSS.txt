@@ -1,0 +1,18 @@
+cursor  (hover)
+list-style (li)
+display
+position
+top/bottom/left/right
+paddin/margin
+width/height
+overflow
+white-space
+word-wrap
+line-break
+border
+font
+color
+text-decoration
+box-shadow
+text-shadow
+transition

@@ -3,3 +3,5 @@
 @import url(_common.css);
 @import url(_header.css);
 @import url(_footer.css);
+@import url("components/_button.css");
+@import url("components/_slider.css");
