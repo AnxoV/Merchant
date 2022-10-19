@@ -1,3 +1,6 @@
+/**
+ * Custom local fonts
+ */
 @font-face {
     font-family: "Hintown";
     src: url(../fonts/hintown/Hintown.otf);
@@ -6,4 +9,12 @@
 @font-face {
     font-family: "Market_Deco";
     src: url(../fonts/Market_Deco/Market_Deco.ttf);
+}
+
+/**
+ * Global system fonts
+ */
+:root {
+    --sans-serif: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }

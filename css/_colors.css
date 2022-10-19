@@ -1,5 +1,5 @@
-* {
-    --police_blue: #335C67;
-    --tigers_eye: #E09F3E;
-    --ghost_white: #F8F9FA;
+:root {
+    --mc: #fff;
+    --mc-2: #ccc;
+    --mc-3: #999;
 }
