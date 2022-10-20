@@ -14,15 +14,13 @@
     margin: 1rem 0;
 }
 
-code {
-    color: rgb(212, 84, 200);
-}
+
 
 .visual {
     margin: 1rem 0;
     padding: 1rem 1.5rem;
 
-    border: 1px solid var(--mc-2);
+    border: 1px solid var(--mc-4);
     border-radius: .5rem;
 }
 .visual > div {
@@ -54,7 +52,7 @@ code {
 }
 .color-container:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 5px var(--mc-2);
+    box-shadow: 0px 2px 5px var(--mc-4);
 }
 
 .color {

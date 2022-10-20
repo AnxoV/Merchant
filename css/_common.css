@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: var(--bs);
+    background-color: var(--mc-1);
 }
 
 header {
@@ -64,7 +64,7 @@ header > * {
 
     width: 100%;
 
-    border: 1px solid var(--mc-3);
+    border: 1px solid var(--mc-7);
     border-radius: 5rem;
 }
 
@@ -77,14 +77,13 @@ header > * {
 .actions_wrapper .button {
     font-size: .8rem;
 
-    box-shadow: 0px 2px 0px var(--bs-button-shadow);
+    box-shadow: 0px 2px 0px var(--e-shd);
 }
 
 .actions_wrapper .button:hover {
-    box-shadow: 0px 0px 0px var(--bs-button-shadow);
+    box-shadow: 0px 0px 0px var(--e-shd);
     transform: translateY(2px);
 }
-
 
 
 /**
@@ -93,40 +92,6 @@ header > * {
 
 main {
     padding: 5rem;
-}
-
-article {
-    padding: 4rem;
-
-    box-shadow: 0px 0px 5px var(--mc-2);
-}
-
-.products {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.product {
-    margin-top: 2rem;
-    padding: 2rem;
-
-    width: 20rem;
-
-    border: 1px solid var(--mc-2);
-    border-radius: .8rem;
-}
-
-.product h1 {
-    margin-top: 1rem;
-}
-
-.product p {
-    margin: 1rem 0;
-}
-
-.product small {
-    color: var(--mc-3);
 }
 
 /**

@@ -1,15 +1,6 @@
-:root {
-    --bs-sl-item-background: #fff;
-
-    --bs-sl-button-color: #90a4ae;
-    --bs-sl-button-background: #f9fafa;
-    --bs-sl-button-shadow: #ddd;
-
-    --hv-sl-button-background: #ededed;
-}
-
 .slider {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -26,15 +17,15 @@
 
     border: none;
     border-radius: 50%;
-    color: var(--bs-sl-button-color);
-    background-color: var(--bs-sl-button-background);
+    color: var(--btn-cl-2);
+    background-color: var(--btn-bg-1);
 
     transition-duration: .5s;
 
 }
 
 .slider_button:hover {
-    background-color: var(--hv-sl-button-background);
+    background-color: var(--hv-bg);
 }
 
 .slider_button img {
@@ -55,19 +46,31 @@
 
 .slider_wrapper {
     position: relative;
+
+    width: 180px;
+
+    overflow: hidden;
 }
 
 .slider_content {
     display: flex;
     position: relative;
+
+    left: 0px;
+
+    width: fit-content;
+
+    transition: .5s;
 }
 
 .slider_content > * {
-    margin: .2em;
+    margin: 5px;
 }
 
 .slider_item {
     list-style: none;
+
+    width: 50px;
 }
 
 .slider_item .button {
@@ -81,11 +84,11 @@
 
     box-shadow: none;
 
-    background-color: var(--bs-sl-item-background);
+    background-color: var(--mc-1);
 }
 
 .slider_item .button:hover {
-    box-shadow: 0px 2px 5px var(--bs-sl-button-shadow);
+    box-shadow: 0px 2px 5px var(--e-shd);
     transform: translateY(-2px);
 }
 

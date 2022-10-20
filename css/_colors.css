@@ -1,6 +1,48 @@
+/**
+ * When modifying any of these colors
+ * please convert them into hexadecimal
+ */
+
 :root {
+    /**
+     * Monochromatic colors
+     */
     --mc-1: #ffffff;
-    --mc-2: #cccccc;
-    --mc-3: #999999;
-    --mc-9: #000000;
+    --mc-2: #eeeeee;
+    --mc-3: #dddddd;
+    --mc-4: #cccccc;
+    --mc-5: #bbbbbb;
+    --mc-6: #aaaaaa;
+    --mc-7: #999999;
+    --mc-8: #888888;
+    --mc-9: #777777;
+    --mc-10: #666666;
+    --mc-11: #555555;
+    --mc-12: #444444;
+    --mc-13: #333333;
+    --mc-14: #222222;
+    --mc-15: #111111;
+    --mc-16: #000000;
+
+    /**
+     * Base element colors
+     */
+    --e-cl: #333333;
+    --e-bd: #777777;
+    --e-bg: #ffffff;
+    --e-shd: #dddddd;
+    --hv-e-bg: #f7f7f7;
+
+    /**
+     * Specific button colors
+     */
+    --btn-cl-1: #ededed;
+    --btn-bg-1: #f9fafa;
+    --btn-shw-1: #cccccc;
+
+
+    /**
+     * Code element colors
+     */
+    --cd-1: #d454c8;
 }

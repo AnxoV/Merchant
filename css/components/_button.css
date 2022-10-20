@@ -1,23 +1,14 @@
-:root {
-    --bs-button-color: #333;
-    --bs-button-border: #777;
-    --bs-button-background: #fff;
-    --bs-button-shadow: #ccc;
-
-    --hv-button-background: #f7f7f7;
-}
-
 .button {
     padding: .5rem 1rem;
 
     width: fit-content;
     height: fit-content;
 
-    border: 1px solid var(--bs-button-border);
+    border: 1px solid var(--e-bd);
     border-radius: 2rem;
 
-    color: var(--bs-button-color);
-    background-color: var(--bs-button-background);
+    color: var(--e-cl);
+    background-color: var(--e-bg);
 
     text-decoration: none;
 
@@ -27,5 +18,5 @@
 .button:hover {
     cursor: pointer;
 
-    background-color: var(--hv-button-background);
+    background-color: var(--hv-e-bg);
 }

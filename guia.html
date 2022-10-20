@@ -17,7 +17,9 @@
             <div class="style-item">
                 <h2>Encabezados</h2>
                 <p>
-                    Desde <code>h1</code> hasta <code>h6</code>
+                    Los elementos que siempre van en cabeza,
+                    desde <code>h1</code> hasta <code>h6</code>
+                    así es como se ven los diferentes encabezados.
                 </p>
                 <div class="visual">
                     <h1>Encabezado h1</h1>
@@ -28,21 +30,93 @@
                     <h6>Encabezado h6</h6>
                 </div>
             </div>
+
+            <div class="style-item">
+                <h2>Botones</h2>
+                <p>
+                    Tanto para enviar formularios como para
+                    diseñar menús, los elementos <code>button</code>, 
+                    <code>a</code> e <code>input</code> 
+                    son necesarios para una buena interacción con el usuario.
+                    Utilizan la clase <code>.button</code> para lograr un estilo
+                    y funcionalidad general. 
+                </p>
+                <div class="visual">
+                    <button class="button">Botón</button>
+                    <a href="#" class="button">Ancla</a>
+                    <input type="button" class="button" value="Campo de tipo botón">
+                    <input type="submit" class="button" value="Campo de tipo enviar">
+                    <input type="reset" class="button" value="Campo de tipo reiniciar">
+                </div>
+            </div>
+
+            <div class="style-item">
+                <h2>Sliders</h2>
+                <p>
+                    Muestra una selección de elementos con el
+                    <code>slider</code>, una forma sencilla
+                    y elegante hará que la página sea más
+                    dinámica.
+                </p>
+                <div class="visual">
+                    <div class="slider">
+                        <button class="slider_button button">
+                            <img src="img/icons/arrow-left.svg" alt="arrow left">
+                        </button>
+                        <div class="slider_wrapper">
+                            <ul class="slider_content">
+                                <li class="slider_item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <small>Hyena</small>
+                                    </a>
+                                </li>
+                                <li class="slider_item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <small>Hyena</small>
+                                    </a>
+                                </li>
+                                <li class="slider_item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <small>Hyena</small>
+                                    </a>
+                                </li>
+                                <li class="slider_item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <small>Hyena</small>
+                                    </a>
+                                </li>
+                                <li class="slider_item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <small>Hyena</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="slider_button button">
+                            <img src="img/icons/arrow-right.svg" alt="arrow right">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="style-item">
                 <h2>Colores</h2>
                 <p>
-                    Principales colores usados en la página junto
-                    con su respectiva variable
+                    Los colores principales de los elementos de la página.
                 </p>
                 <div class="visual">
-                    <h3>Escala de grises</h3>
                     <div class="d-flex wrap" id="colors_container">
                     </div>
                 </div>
             </div>
-            
         </div>
 
-        <script src="js/getColors.js"></script>
+        <script type="module" src="js/slider.js"></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>
