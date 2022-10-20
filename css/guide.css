@@ -1,0 +1,95 @@
+.container {
+    padding: 5rem;
+    align-self: center;
+
+    width: 60%;
+    height: 100%;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+}
+
+.style-item {
+    margin: 1rem 0;
+}
+
+code {
+    color: rgb(212, 84, 200);
+}
+
+.visual {
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+
+    border: 1px solid var(--mc-2);
+    border-radius: .5rem;
+}
+.visual > div {
+    margin: .5em;
+}
+
+.d-flex {
+    display: flex;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: .5rem;
+
+    border-radius: .4rem;
+
+    transition: .2s;
+}
+.color-container:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 5px var(--mc-2);
+}
+
+.color {
+    --color: inherit;
+    position: relative;
+
+    width: 5rem;
+    height: 5rem;
+
+    background-color: var(--color);
+}
+.color + * {
+    margin-top: .5rem;
+}
+
+.color-hex {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    opacity: 0;
+
+    transition: .5s;
+    transform: translate(-50%, -50%);
+}
+.light-c {
+    color: var(--mc-1);
+}
+.dark-c {
+    color: var(--mc-9);
+}
+.color-container:hover .color-hex {
+    opacity: 1;
+}
+.color-hex:hover {
+    cursor: text;
+}
