@@ -51,6 +51,22 @@
             </div>
 
             <div class="style-item">
+                <h2>Barras de búsqueda</h2>
+                <p>
+                    Derivadas de los <code>input</code>,
+                    las barras de búsqueda ayudaran al usuario
+                    a encontrar lo que necesita.
+                    Utilízalas junto a la clase <code>.search-bar</code>
+                    para obtener el siguiente resultado.
+                </p>
+                <div class="visual">
+                    <form class="search-form">
+                        <input type="text" class="search-bar" placeholder="Buscar">
+                    </form>
+                </div>
+            </div>
+
+            <div class="style-item">
                 <h2>Sliders</h2>
                 <p>
                     Muestra una selección de elementos con el
@@ -60,44 +76,50 @@
                 </p>
                 <div class="visual">
                     <div class="slider">
-                        <button class="slider_button button">
+                        <button class="slider-button button">
                             <img src="img/icons/arrow-left.svg" alt="arrow left">
                         </button>
-                        <div class="slider_wrapper">
-                            <ul class="slider_content">
-                                <li class="slider_item">
+                        <div class="slider-wrapper">
+                            <ul class="slider-content">
+                                <li class="slider-item">
                                     <a href="#" class="button">
                                         <img src="img/icons/hyena.svg" alt="hyena">
-                                        <small>Hyena</small>
+                                        <h5>Hyena</h5>
                                     </a>
                                 </li>
-                                <li class="slider_item">
+                                <li class="slider-item">
                                     <a href="#" class="button">
                                         <img src="img/icons/hyena.svg" alt="hyena">
-                                        <small>Hyena</small>
+                                        <h5>Hyena</h5>
                                     </a>
                                 </li>
-                                <li class="slider_item">
+                                <li class="slider-item">
                                     <a href="#" class="button">
                                         <img src="img/icons/hyena.svg" alt="hyena">
-                                        <small>Hyena</small>
+                                        <h5>Hyena</h5>
                                     </a>
                                 </li>
-                                <li class="slider_item">
+                                <li class="slider-item">
                                     <a href="#" class="button">
                                         <img src="img/icons/hyena.svg" alt="hyena">
-                                        <small>Hyena</small>
+                                        <h5>Hyena</h5>
                                     </a>
                                 </li>
-                                <li class="slider_item">
+                                <li class="slider-item">
                                     <a href="#" class="button">
                                         <img src="img/icons/hyena.svg" alt="hyena">
-                                        <small>Hyena</small>
+                                        <h5>Hyena</h5>
+                                    </a>
+                                </li>
+                                <li class="slider-item">
+                                    <a href="#" class="button">
+                                        <img src="img/icons/hyena.svg" alt="hyena">
+                                        <h5>Hyena</h5>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <button class="slider_button button">
+                        <button class="slider-button button">
                             <img src="img/icons/arrow-right.svg" alt="arrow right">
                         </button>
                     </div>
@@ -110,13 +132,14 @@
                     Los colores principales de los elementos de la página.
                 </p>
                 <div class="visual">
-                    <div class="d-flex wrap" id="colors_container">
+                    <div class="d-flex wrap" id="colors-container">
                     </div>
                 </div>
             </div>
         </div>
 
-        <script type="module" src="js/slider.js"></script>
-        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/Slider.js"></script>
+        <script type="module" src="js/Color.js"></script>
+        <script type="module" src="js/guide.js"></script>
     </body>
 </html>

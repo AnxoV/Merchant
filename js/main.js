@@ -1,7 +1,8 @@
-import {Slider} from "./slider.js";
+import {Slider} from "./Slider.js";
+
+//~~~~~~~~~~~~~~~~~~//
 
 window.onload = function() {
-
     // Load page sliders
     let sliders = [];
     for(let sl of document.getElementsByClassName("slider")) {
@@ -11,5 +12,4 @@ window.onload = function() {
         sliders.push(slider);
     }
     //~~~~~~~~~~~~~~~~~~//
-
 };

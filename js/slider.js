@@ -51,15 +51,19 @@ export class Slider {
      * @param {Int} d The vector of the direction
      */
     slide(d) {
-        if (this.index+d < 0) {
-            this.index = 0;
-        } else if (this.index+d > this.max) {
-            this.index = this.max;
+        let extra = 0;
+        let left = parseInt(window.getComputedStyle(this.content).left.replace("px", ""));
+        if (left-d*this.step >= 0) {
+            this.content.style.left = "0px";
+            console.log("fuera de rango i");
+        } else if (left-d*this.step <= -this.content_wrapper.offsetWidth) {
+            this.content.style.left = `${-this.content_wrapper.offsetWidth}px`;
+            console.log("fuera de rango d");
                    // Check if slider_content will surpass the slider_Wrapper
                    // We don't want it to happen because it creates empty whitespace
-        } else if (this.index*this.step+d*this.step <= this.diff) {
-            this.index += d;
+        } else {
+            this.content.style.left = `${(left-d*this.step)}px`;
         }
-        this.content.style.left = `${-this.step*this.index}px`;
+        console.log(`Left: ${left}, Step: ${this.step}, WW: ${this.content_wrapper.offsetWidth}, CW: ${this.content.offsetWidth}, Diff: ${this.diff}`);
     }
 }

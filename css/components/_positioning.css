@@ -1,0 +1,10 @@
+/* Justify */
+.j-center {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Margin */
+.mg-v-1 { margin: 1rem 0; }
+.mg-h-1 { margin: 0 1rem; }

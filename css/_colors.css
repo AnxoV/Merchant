@@ -31,14 +31,17 @@
     --e-bd: #777777;
     --e-bg: #ffffff;
     --e-shd: #dddddd;
-    --hv-e-bg: #f7f7f7;
+    --hv-e-bg: #e6e4e4;
 
     /**
      * Specific button colors
      */
     --btn-cl-1: #ededed;
     --btn-bg-1: #f9fafa;
+    --btn-bg-2: #ececec;
     --btn-shw-1: #cccccc;
+
+    --hv-btn-bg-1: #d2d2d2;
 
 
     /**

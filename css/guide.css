@@ -14,8 +14,6 @@
     margin: 1rem 0;
 }
 
-
-
 .visual {
     margin: 1rem 0;
     padding: 1rem 1.5rem;
@@ -23,8 +21,8 @@
     border: 1px solid var(--mc-4);
     border-radius: .5rem;
 }
-.visual > div {
-    margin: .5em;
+.visual > * {
+    margin: 10px;
 }
 
 .d-flex {
