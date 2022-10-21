@@ -41,11 +41,16 @@
     --btn-bg-2: #ececec;
     --btn-shw-1: #cccccc;
 
-    --hv-btn-bg-1: #d2d2d2;
+    --hv-btn-bg-1: #dfdfdf;
 
 
     /**
      * Code element colors
      */
     --cd-1: #d454c8;
+    
+    /**
+     * Selection color
+     */
+    --sl-cl: #ebeff2;
 }

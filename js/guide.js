@@ -39,7 +39,7 @@ function getVars(content) {
 function template(key, color) {
     return `<div class="color-container">
                 <div class="color" style="--color: ${color.value};">
-                    <h4 class="color-hex ${color.toMono() < 100 ? "light" : "dark"}-c">${color.value}</h4>
+                    <h4 class="color-hex ${color.toMono() < 150 ? "light" : "dark"}-c">${color.value}</h4>
                 </div>
                 <h5>${key}</h5>
             </div>`;
@@ -53,8 +53,13 @@ window.onload = async function() {
     let sliders = [];
     for(let sl of document.getElementsByClassName("slider")) {
         let slider = new Slider(sl);
-        slider.left_btn.onclick = () => (slider.slide(-1));
-        slider.right_btn.onclick = () => (slider.slide(1));
+        if (slider.element.classList.contains("vertical-slider")) {
+            slider.btn1.onclick = () => (slider.slide({x: 0, y: -1}));
+            slider.btn2.onclick = () => (slider.slide({x: 0, y: 1}));
+        } else {
+            slider.btn1.onclick = () => (slider.slide({x: -1, y: 0}));
+            slider.btn2.onclick = () => (slider.slide({x: 1, y: 0}));
+        }
         sliders.push(slider);
     }
     //~~~~~~~~~~~~~~~~~~//

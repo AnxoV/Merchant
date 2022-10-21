@@ -30,7 +30,7 @@ input.search-bar::placeholder {
 
 input.search-bar:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px var(--mc-10);
+    box-shadow: 0px 0px 0px 1.5px var(--mc-10);
     padding-left: 1rem;
     background-position: -25px center;
 }

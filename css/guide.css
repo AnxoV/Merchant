@@ -25,13 +25,6 @@
     margin: 10px;
 }
 
-.d-flex {
-    display: flex;
-
-    width: fit-content;
-    height: fit-content;
-}
-
 .wrap {
     flex-wrap: wrap;
 }
@@ -60,6 +53,8 @@
     width: 5rem;
     height: 5rem;
 
+    font-weight: bold;
+
     background-color: var(--color);
 }
 .color + * {
@@ -81,7 +76,7 @@
     color: var(--mc-1);
 }
 .dark-c {
-    color: var(--mc-9);
+    color: var(--mc-16);
 }
 .color-container:hover .color-hex {
     opacity: 1;

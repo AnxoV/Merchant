@@ -16,15 +16,15 @@ export class Color {
      */
     toRGB() {
         let hex = this.value.replace("#", "");
-        if (this.value.length < 6) {
+        if (hex.length < 6) {
             hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
         }
         let rgb = {
-            r: parseInt(this.value.substring(0, 2), 16),
-            g: parseInt(this.value.substring(2, 4), 16),
-            b: parseInt(this.value.substring(4, 6), 16)
+            r: parseInt(hex.substring(0, 2), 16),
+            g: parseInt(hex.substring(2, 4), 16),
+            b: parseInt(hex.substring(4, 6), 16)
         };
-    
+        
         return rgb;
     }
  

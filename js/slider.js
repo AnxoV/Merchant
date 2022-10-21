@@ -1,4 +1,9 @@
 /**
+ * To-do:
+ *  - Change the slider to be a hidden scrollbar controlled by JS
+ */
+
+/**
  * A slider controls how a group of HTMLElements work together.
  * 
  * In HTML a slider follows this structure:
@@ -24,46 +29,50 @@ export class Slider {
      * @param {HTMLElement} slider The element of the slider
      */
     constructor(slider) {
-        this.slider = slider;
+        this.element = slider;
         
         // Direction control buttons
-        this.left_btn = this.slider.children[0];
-        this.right_btn = this.slider.children[2];
+        this.btn1 = this.element.children[0];
+        this.btn2 = this.element.children[2];
         
         // <div class="slider_wrapper">
-        this.content_wrapper = this.slider.children[1];
+        this.content_wrapper = this.element.children[1];
         // <ul class="slider_content">
         this.content = this.content_wrapper.children[0];
         // Used to measure the width+margin of a single element
         this.firstChild = this.content.children[0];
         
-        // index = actual position // step = amount to move // max = limit of the index
-        this.index = 0;
-        this.step = this.content.offsetWidth/this.content.children.length;
-        this.max = this.slider.children[1].children[0].children.length;
-        
-        // Difference in width between the slider_item and slider_content
-        this.diff = this.content.offsetWidth-this.content_wrapper.offsetWidth;
+        // step = amount to move
+        this.mult = 1.5;
+        this.stepx = this.mult * this.content.offsetWidth/this.content.children.length;
+        this.stepy = this.mult * this.content.offsetHeight/this.content.children.length;
+
+        this.left = 0;
+        this.top = 0;
     }
 
     /**
      * Moves the offset in a certain direction.
-     * @param {Int} d The vector of the direction
+     * @param {{x: Int, y: Int}} v The vector of the direction
      */
-    slide(d) {
-        let extra = 0;
-        let left = parseInt(window.getComputedStyle(this.content).left.replace("px", ""));
-        if (left-d*this.step >= 0) {
-            this.content.style.left = "0px";
-            console.log("fuera de rango i");
-        } else if (left-d*this.step <= -this.content_wrapper.offsetWidth) {
-            this.content.style.left = `${-this.content_wrapper.offsetWidth}px`;
-            console.log("fuera de rango d");
-                   // Check if slider_content will surpass the slider_Wrapper
-                   // We don't want it to happen because it creates empty whitespace
+    slide(v) {
+        if (this.left-v.x*this.stepx >= 0) {
+            this.left = 0;
+        } else if (this.left-v.x*this.stepx <= this.content_wrapper.offsetWidth-this.content.offsetWidth) {
+            this.left = this.content_wrapper.offsetWidth-this.content.offsetWidth;
         } else {
-            this.content.style.left = `${(left-d*this.step)}px`;
+            this.left -= v.x*this.stepx;
         }
-        console.log(`Left: ${left}, Step: ${this.step}, WW: ${this.content_wrapper.offsetWidth}, CW: ${this.content.offsetWidth}, Diff: ${this.diff}`);
+
+        if (this.top-v.y*this.stepy >= 0) {
+            this.top = 0;
+        } else if (this.top-v.y*this.stepy <= this.content_wrapper.offsetHeight-this.content.offsetHeight) {
+            this.top = this.content_wrapper.offsetHeight-this.content.offsetHeight
+        } else {
+            this.top -= v.y*this.stepy;
+        }
+
+        this.content.style.left = `${this.left}px`;
+        this.content.style.top = `${this.top}px`;
     }
 }

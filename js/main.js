@@ -7,8 +7,8 @@ window.onload = function() {
     let sliders = [];
     for(let sl of document.getElementsByClassName("slider")) {
         let slider = new Slider(sl);
-        slider.left_btn.onclick = () => (slider.slide(-1));
-        slider.right_btn.onclick = () => (slider.slide(1));
+        slider.btn1.onclick = () => (slider.slide({x: -1, y: 0}));
+        slider.btn2.onclick = () => (slider.slide({x: 1, y: 0}));
         sliders.push(slider);
     }
     //~~~~~~~~~~~~~~~~~~//
