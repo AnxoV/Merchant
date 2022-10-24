@@ -3,6 +3,7 @@ list-style (li)
 display
 position
 top/bottom/left/right
+transform
 paddin/margin
 width/height
 overflow
