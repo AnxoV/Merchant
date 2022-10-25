@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: fit-content;
 }
@@ -95,5 +96,4 @@
 }
 .slider.vertical-slider .slider-wrapper {
     flex-direction: column;
-    height: 80%;
 }
