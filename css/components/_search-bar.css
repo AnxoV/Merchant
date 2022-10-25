@@ -17,7 +17,9 @@ input.search-bar {
 
     font-size: 1rem;
 
-    box-shadow: 0px 0px 0px 1px inherit;
+    color: var(--mc-4);
+
+    box-shadow: 0px 0px 0px 1px var(--mc-4);
 
     background-image: url(../../img/icons/magnifying-glass.svg);
     background-position: 10px center;
@@ -32,7 +34,7 @@ input.search-bar::placeholder {
 
 input.search-bar:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 1.5px inherit;
+    box-shadow: 0px 0px 0px 2px var(--mc-4);
     padding-left: 1rem;
     background-position: -25px center;
 }

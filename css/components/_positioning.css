@@ -25,7 +25,7 @@
  * Justify content / items / text stlyes
  */
 .jc-c { justify-content: center; }
-.ji-c { justify-items: center; }
+.ai-c { align-items: center; }
 .ta-c { text-align: center; } 
 
 /**

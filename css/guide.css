@@ -18,7 +18,7 @@
     margin: 1rem 0;
     padding: 1rem 1.5rem;
 
-    border: 1px solid var(--mc-4);
+    border: 1px solid var(--mc-12);
     border-radius: .5rem;
 }
 .visual > * {
@@ -43,7 +43,7 @@
 }
 .color-container:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 5px var(--mc-4);
+    box-shadow: 0px 2px 5px var(--mc-12);
 }
 
 .color {
@@ -73,10 +73,10 @@
     transform: translate(-50%, -50%);
 }
 .light-c {
-    color: var(--mc-1);
+    color: var(--mc-15);
 }
 .dark-c {
-    color: var(--mc-16);
+    color: var(--mc-0);
 }
 .color-container:hover .color-hex {
     opacity: 1;

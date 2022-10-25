@@ -18,7 +18,7 @@ a {
 hr {
     width: 100%;
     border: none;
-    border-top: 1px solid var(--mc-3);
+    border-top: 1px solid var(--mc-2);
 }
 
 code {

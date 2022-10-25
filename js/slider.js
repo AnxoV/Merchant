@@ -36,19 +36,16 @@ export class Slider {
         this.btn2 = this.element.children[2];
         
         // <div class="slider_wrapper">
-        this.content_wrapper = this.element.children[1];
-        // <ul class="slider_content">
-        this.content = this.content_wrapper.children[0];
+        this.content = this.element.children[1];
         // Used to measure the width+margin of a single element
         this.firstChild = this.content.children[0];
         
-        // step = amount to move
+        // stepxy = amount to move
         this.mult = 1.5;
-        this.stepx = this.mult * this.content.offsetWidth/this.content.children.length;
-        this.stepy = this.mult * this.content.offsetHeight/this.content.children.length;
-
-        this.left = 0;
-        this.top = 0;
+        this.step = {
+            x: this.mult * this.content.offsetWidth/this.content.children.length,
+            y: this.mult * this.content.offsetHeight/this.content.children.length
+        };
     }
 
     /**
@@ -56,23 +53,6 @@ export class Slider {
      * @param {{x: Int, y: Int}} v The vector of the direction
      */
     slide(v) {
-        if (this.left-v.x*this.stepx >= 0) {
-            this.left = 0;
-        } else if (this.left-v.x*this.stepx <= this.content_wrapper.offsetWidth-this.content.offsetWidth) {
-            this.left = this.content_wrapper.offsetWidth-this.content.offsetWidth;
-        } else {
-            this.left -= v.x*this.stepx;
-        }
-
-        if (this.top-v.y*this.stepy >= 0) {
-            this.top = 0;
-        } else if (this.top-v.y*this.stepy <= this.content_wrapper.offsetHeight-this.content.offsetHeight) {
-            this.top = this.content_wrapper.offsetHeight-this.content.offsetHeight
-        } else {
-            this.top -= v.y*this.stepy;
-        }
-
-        this.content.style.left = `${this.left}px`;
-        this.content.style.top = `${this.top}px`;
+        this.content.scrollBy(v.x*this.step.x, v.y*this.step.y);
     }
 }

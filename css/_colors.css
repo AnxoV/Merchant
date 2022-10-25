@@ -5,64 +5,52 @@
 
 :root {
     /**
-     * Monochromatic colors
-     */
-    --mc-1: #ffffff;
-    --mc-2: #eeeeee;
-    --mc-3: #dddddd;
-    --mc-4: #cccccc;
-    --mc-5: #bbbbbb;
-    --mc-6: #aaaaaa;
-    --mc-7: #999999;
-    --mc-8: #888888;
-    --mc-9: #777777;
-    --mc-10: #666666;
-    --mc-11: #555555;
-    --mc-12: #444444;
-    --mc-13: #333333;
-    --mc-14: #222222;
-    --mc-15: #111111;
-    --mc-16: #000000;
-
-    /**
-     * Base element colors
-     */
-    --e-cl: #333333;
-    --e-bd: #777777;
-    --e-bg: #ffffff;
-    --e-shd: #dddddd;
-    --hv-e-bg: #e6e4e4;
-
-    /**
-     * Specific button colors
-     */
-    --btn-cl-1: #ededed;
-    --btn-bg-1: #f9fafa;
-    --btn-bg-2: #ececec;
-    --btn-shw-1: #cccccc;
-
-    --hv-btn-bg-1: #dfdfdf;
-
-
-    /**
-     * Code element colors
-     */
-    --cd-1: #d454c8;
-    
-    /**
-     * Selection color
-     */
-    --sl-cl: #ebeff2;
-
-    /**
      * Main colors
      */
-    --m-cl-1: #44355b;
-    --m-cl-2: #31263e;
-    --m-cl-3: #5f5372;
-    --m-cl-4: #eca72c;
-    --m-cl-5: #ee5622;
+     --m-cl-1: #44355b;
+     --m-cl-2: #eca72c;
+     --m-cl-3: #ee5622;
 
+    /**
+     * Main color variants
+     */
+     --m-cl-1-1: #31263e;
+     --m-cl-1-2: #5f5372;
+     --m-cl-2-1: #c79134;
+     --m-cl-2-2: #ffbc49;
+     --m-cl-3-1: #b93c12;
+     --m-cl-3-2: #fa6d3d;
 
-    --hv-m-cl-1: #44355b;
+    /**
+     * HTML code color.
+     * used to resalt classes and elements on the guide page
+     */
+    --cd-1: #d454c8;
+
+    /**
+     * Selection color.
+     * Used as background color when selecting text with the cursor
+     */
+     --sl-cl: #ebeff2;
+
+    /**
+     * Monochromatic colors.
+     * Used for neutral colors and gradients
+     */
+    --mc-15: #ffffff;
+    --mc-14: #eeeeee;
+    --mc-13: #dddddd;
+    --mc-12: #cccccc;
+    --mc-11: #bbbbbb;
+    --mc-10: #aaaaaa;
+    --mc-9: #999999;
+    --mc-8: #888888;
+    --mc-7: #777777;
+    --mc-6: #666666;
+    --mc-5: #555555;
+    --mc-4: #444444;
+    --mc-3: #333333;
+    --mc-2: #222222;
+    --mc-1: #111111;
+    --mc-0: #000000;
 }

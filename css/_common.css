@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: var(--mc-1);
+    background-color: var(--mc-15);
 }
 
 header {
@@ -110,6 +110,15 @@ main {
 
     color: var(--m-cl-5);
 }
+
+#category-slider {
+    color: var(--m-cl-1);
+}
+
+
+
+
+
 .top-items-heading {
     color: var(--m-cl-5);
 }
@@ -124,7 +133,7 @@ main {
 .top-item {
     padding: 1rem;
     
-    border: 1px solid var(--mc-4);
+    border: 1px solid var(--mc-12);
 
     transition: .2s;
 }
@@ -142,6 +151,6 @@ main {
 /* Footer */
 footer {
     padding: 2rem;
-    color: var(--mc-1);
+    color: var(--mc-15);
     background-color: var(--m-cl-1);
 }

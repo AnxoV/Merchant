@@ -4,7 +4,7 @@
     width: fit-content;
     height: fit-content;
 
-    border: 1px solid inherit;
+    border: 1px solid var(--mc-9);
     border-radius: 2rem;
 
     color: inherit;
@@ -18,5 +18,5 @@
 .button:hover {
     cursor: pointer;
 
-    background-color: var(--hv-e-bg);
+    background-color: var(--mc-14);
 }
