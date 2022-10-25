@@ -53,4 +53,16 @@
      * Selection color
      */
     --sl-cl: #ebeff2;
+
+    /**
+     * Main colors
+     */
+    --m-cl-1: #44355b;
+    --m-cl-2: #31263e;
+    --m-cl-3: #5f5372;
+    --m-cl-4: #eca72c;
+    --m-cl-5: #ee5622;
+
+
+    --hv-m-cl-1: #44355b;
 }

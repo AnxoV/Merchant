@@ -13,3 +13,20 @@ window.onload = function() {
     }
     //~~~~~~~~~~~~~~~~~~//
 };
+
+/**
+ * let isColorBlindOn = false;
+ * window.onload = function() {
+ *  button.onclick = toggleColorBlind;
+ *  
+ * }
+ * 
+ * function toggleColorBlind() {
+ *  if (!isColorBlindOn) {
+ *      // set filter to grayscale(1)
+ *  } else {
+ *      // set filter to none
+ *  }
+ *  isColorBlindOn = !isColorBlindOn;
+ * }
+ */

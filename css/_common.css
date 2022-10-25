@@ -1,6 +1,4 @@
-/**
- * Global styles
- */
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -40,9 +38,7 @@ footer {
     flex: 0 0 auto;
 }
 
-/**
- * Header
- */
+/* Header styles */
 header {
     display: flex;
     align-items: center;
@@ -59,41 +55,44 @@ header > * {
 }
 .logo-wrapper h1 {
     font-weight: 500;
-    color: var(--mc-12);
+    color: var(--m-cl-1);
 }
 .searchbox-wrapper {
     flex: 1 0 auto;
 
     padding: .5rem;
 }
-/* ~~~~ */
+
+.search-bar {
+    color: var(--m-cl-1);
+    box-shadow: 0px 0px 0px 1px var(--m-cl-1);
+}
+.search-bar:focus {
+    box-shadow: 0px 0px 0px 2px var(--m-cl-1);
+}
 
 /* User login/register button */
 .actions-wrapper {
     flex: 0 0 auto;
-    
-    width: 2rem;
-    height: 2rem;
 }
 .button.user-access {
     display: block;
 
-    padding: 0;
-
-    width: 100%;
-    height: 100%;
+    padding: .5rem;
     
     border: none;
+
+    background-color: var(--m-cl-1);
+}
+.button.user-access:hover {
+    background-color: var(--hv-m-cl-1);
 }
 .button.user-access img {
-    width: 100%;
+    width: 1.5rem;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-/**
- * Main
- */
+/* Main styles */
 main {
     display: flex;
     flex-direction: column;
@@ -101,28 +100,26 @@ main {
 }
 
 .home-heading {
-    margin-top: 1rem;
-    text-align: center;
     font-weight: lighter;
-    color: var(--mc-6);
+    color: var(--m-cl-5);
 }
 
 .home-title {
-    margin-bottom: 1rem;
-    text-align: center;
     font-size: 3rem;
     font-weight: 500;
 
-    color: var(--mc-12);
+    color: var(--m-cl-5);
 }
-
+.top-items-heading {
+    color: var(--m-cl-5);
+}
 .top-items {
     display: grid;
-    margin-top: 1rem;
-    width: 80%;
     gap: 1rem;
 
     grid-template: repeat(3, 1fr) repeat(3, 1fr);
+    
+
 }
 .top-item {
     padding: 1rem;
@@ -142,9 +139,9 @@ main {
 #item4 { grid-area: 3 / 1; }
 #item5 { grid-area: 3 / 2 / span 1 / span 2 ; }
 
-/**
- * Footer
- */
+/* Footer */
 footer {
-    padding: 5%;
+    padding: 2rem;
+    color: var(--mc-1);
+    background-color: var(--m-cl-1);
 }
