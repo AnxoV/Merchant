@@ -108,15 +108,21 @@ main {
 }
 
 .home-heading {
+    text-align: center;
+    margin-top: 3rem;
+
     font-weight: lighter;
-    color: var(--m-cl-5);
+    color: var(--m-cl-2);
 }
 
 .home-title {
+    text-align: center;
+    margin-bottom: 1rem;
+
     font-size: 3rem;
     font-weight: 500;
 
-    color: var(--m-cl-5);
+    color: var(--m-cl-2);
 }
 
 #category-slider {
@@ -125,13 +131,14 @@ main {
 }
 
 
-
-
-
 .top-items-heading {
-    color: var(--m-cl-5);
+    margin-top: 2rem;
+    color: var(--m-cl-2);
 }
 .top-items {
+    margin: 1rem 0;
+    width: 80%;
+    
     display: grid;
     gap: 1rem;
 

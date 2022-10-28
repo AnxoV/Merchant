@@ -1,5 +1,6 @@
 import {Slider} from "./Slider.js";
 import {Color} from "./Color.js";
+import {InfoText} from "./InfoText.js";
 
 // Helper functions
 
@@ -62,7 +63,7 @@ window.onload = async function() {
         }
         sliders.push(slider);
     }
-    //~~~~~~~~~~~~~~~~~~//
+
     // Load page colors example
     let colors_container = document.getElementById("colors-container");
     let colors_file = "http://localhost/Merchant/css/_colors.css";
@@ -71,5 +72,9 @@ window.onload = async function() {
         let color = new Color(value);
         colors_container.innerHTML += template(key, color);
     }
-    //~~~~~~~~~~~~~~~~~~//
+
+    // Initiate the InfoText object
+    for (let infotext of document.getElementsByClassName("infotext")) {
+        infotext = new InfoText(infotext);
+    }
 };

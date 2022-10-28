@@ -11,11 +11,9 @@
  *      <div class="slider">
  *          <button class="slider_button"/>
  *          <div class="slider_wrapper">
- *              <ul class="slider_content">
- *                  <li class="slider_item">
- *                  <li class="slider_item">
- *                  <li class="slider_item">
- *              </ul>
+*               <div class="slider_item">
+*               <div class="slider_item">
+*               <div class="slider_item">
  *          </div>
  *          <button class="slider_button"/>
  *      </div>
@@ -37,8 +35,6 @@ export class Slider {
         
         // <div class="slider_wrapper">
         this.content = this.element.children[1];
-        // Used to measure the width+margin of a single element
-        this.firstChild = this.content.children[0];
         
         // stepxy = amount to move
         this.mult = 1.5;
