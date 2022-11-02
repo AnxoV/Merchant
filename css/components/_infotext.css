@@ -1,0 +1,44 @@
+@keyframes ticker {
+    from { right: 0%; }
+    to { right: 100%; }
+}
+
+.ticker {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: aquamarine;
+
+    overflow: hidden;
+}
+
+.ticker-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    height: 100%;
+
+    padding: .5rem 0;
+
+    animation: ticker 30s linear infinite;
+
+    transition: 1s linear;
+}
+
+.ticker-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1rem;
+}
+
+.ticker-item:first-child, .ticker-item:last-child {
+    margin: 0;
+}

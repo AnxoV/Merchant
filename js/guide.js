@@ -1,6 +1,5 @@
 import {Slider} from "./Slider.js";
 import {Color} from "./Color.js";
-import {InfoText} from "./InfoText.js";
 
 // Helper functions
 
@@ -71,10 +70,5 @@ window.onload = async function() {
     for (let [key, value] of Object.entries(colors)) {
         let color = new Color(value);
         colors_container.innerHTML += template(key, color);
-    }
-
-    // Initiate the InfoText object
-    for (let infotext of document.getElementsByClassName("infotext")) {
-        infotext = new InfoText(infotext);
     }
 };
