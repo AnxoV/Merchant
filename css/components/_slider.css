@@ -77,7 +77,8 @@
 }
 
 .slider-item .button:hover {
-    box-shadow: 0px 2px 10px var(--mc-13);
+    --shd-cl: var(--mc-13);
+    box-shadow: 0px 2px 10px var(--shd-cl);
     transform: translateY(-2px);
 }
 
