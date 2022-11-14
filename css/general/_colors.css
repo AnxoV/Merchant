@@ -1,18 +1,18 @@
 /**
- * When modifying any of these colors
+ * When modifying any of these colours
  * please convert them into hexadecimal
  */
 
 :root {
     /**
-     * Main colors
+     * Main colours
      */
      --m-cl-1: #5d4287;
      --m-cl-2: #eca72c;
      --m-cl-3: #ee5622;
 
     /**
-     * Main color variants
+     * Main colour variants
      */
      --m-cl-1-1: #31263e;
      --m-cl-1-2: #5f5372;
@@ -41,20 +41,25 @@
      --m-cl-3-2: #fa6d3d;
 
     /**
-     * HTML code color.
+     * HTML code colour.
      * used to resalt classes and elements on the guide page
      */
     --cd-1: #d454c8;
 
     /**
-     * Selection color.
-     * Used as background color when selecting text with the cursor
+     * Link colour.
+     */
+    --l-cl: #3455eb;
+
+    /**
+     * Selection colour.
+     * Used as background colour when selecting text with the cursor
      */
      --sl-cl: #ebeff2;
 
     /**
-     * Monochromatic colors.
-     * Used for neutral colors and gradients
+     * Monochromatic colours.
+     * Used for neutral colours and gradients
      */
     --mc-15: #ffffff;
     --mc-14: #eeeeee;

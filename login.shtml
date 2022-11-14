@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/components/_ticker.css">
+        <link rel="stylesheet" href="css/components/_search-bar.css">
+        <link rel="stylesheet" href="css/_form.css">
+        <link rel="stylesheet" href="css/components/_form.css">
+        <title>Registrarse</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <!--#include file="ssi/header.html"-->
+
+        <!-- MAIN -->
+        <main>
+            <div class="wrapper">
+                <div class="form-wrapper">
+                    <h2 class="form-heading">Inicia sesión:</h2>
+                    <form class="form login-form">
+                        <input type="email" for="correo_electronico" class="form-input" id="correo_electronico" placeholder="Correo electrónico" autocomplete="email" required>
+                        <input type="password" for="contraseña" class="form-input" id="contraseña" placeholder="Contraseña" autocomplete="current-password" required>
+                        <input type="submit" id="acceder" class="button" value="Iniciar sesión">
+                    </form>
+                    <a href="register.shtml" class="redirect-link">¿Aún no estás registrado?</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <!--#include file="ssi/footer.html"-->
+
+    </body>
+</html>

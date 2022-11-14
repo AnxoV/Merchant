@@ -1,0 +1,37 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1rem;
+
+    width: 20rem;
+}
+
+.login-form {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.login-form #correo_electronico { grid-area: 1 / 1; }
+.login-form #contraseña { grid-area: 2 / 1; }
+.login-form #acceder { grid-area: 3 / 1; }
+
+.register-form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.register-form #nombre { grid-area: 1 / 1; }
+.register-form #apellidos { grid-area: 1 / 2; }
+.register-form #correo_electronico { grid-area: 2 / 1 / span 1 / span 2; }
+.register-form #telefono { grid-area: 3 / 1; }
+.register-form #acceder { grid-area: 4 / 1; }
+
+.redirect-link {
+    align-self: flex-start;
+    text-align: left;
+
+    font-size: .8rem;
+    color: var(--l-cl);
+}

@@ -1,0 +1,33 @@
+.form {
+    display: grid;
+    gap: .5rem;
+
+    padding: 1rem;
+
+    width: 100%;
+}
+
+.form-heading {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.form-input {
+    padding: .5rem;
+
+    border: 1px solid var(--mc-10);
+    border-radius: .5rem;
+}
+
+#acceder {
+    width: 10rem;
+
+    
+    color: var(--mc-15);
+    background-color: var(--m-cl-1);
+    
+    border: none;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
