@@ -6,6 +6,8 @@
     margin: 1rem;
 
     width: 20rem;
+
+    transform: translateY(-5rem);
 }
 
 .login-form {

@@ -23,73 +23,91 @@
                     </button>
                     <div class="slider-wrapper">
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/all.svg" alt="categorias">
                                 <h5>Categorías</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
+                                <img src="img/icons/categories/christmas-hat.svg" alt="navidad">
+                                <h5>Navidad</h5>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/halloween.svg" alt="halloween">
                                 <h5>Halloween</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/smartphone.svg" alt="electronica">
                                 <h5>Electrónica</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/cd.svg" alt="musica">
                                 <h5>Música</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/shirt.svg" alt="ropa">
                                 <h5>Ropa</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/car.svg" alt="coches">
                                 <h5>Coches</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/motorcycle.svg" alt="motos">
                                 <h5>Motos</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/sports.svg" alt="deportes">
                                 <h5>Deportes</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/stroller.svg" alt="niños">
                                 <h5>Niños</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/books.svg" alt="libros">
                                 <h5>Libros</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
-                                <img src="img/icons/hyena.svg" alt="hyena">
+                            <a href="categorias.shtml" class="button">
+                                <img src="img/icons/categories/cactus.svg" alt="plantas">
+                                <h5>Plantas</h5>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="categorias.shtml" class="button">
+                                <img src="img/icons/categories/collectibles.svg" alt="coleccionismo">
+                                <h5>Coleccionismo</h5>
+                            </a>
+                        </div>
+                        <div class="slider-item">
+                            <a href="categorias.shtml" class="button">
+                                <img src="img/icons/categories/hyena.svg" alt="hyena">
                                 <h5>Hyena</h5>
                             </a>
                         </div>
                         <div class="slider-item">
-                            <a href="#" class="button">
+                            <a href="categorias.shtml" class="button">
                                 <img src="img/icons/categories/other.svg" alt="otros">
                                 <h5>Otros</h5>
                             </a>
@@ -116,7 +134,7 @@
         <!-- FOOTER -->
         <!--#include file="ssi/footer.html"-->
         
-        <script type="module" scr="./js/Slider.js"></script>
+        <script type="module" scr="./js/slider.js"></script>
         <script type="module" src="./js/main.js"></script>
     </body>
 </html>
